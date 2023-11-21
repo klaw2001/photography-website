@@ -3,9 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import logo from "../images/logo.png";
 const Footer = () => {
   return (
-    <div className="footer-wrapper">
+    <div className="footer-wrapper py-3" >
       <Container>
-        <Row className="row-cols-1 row-cols-md-3">
+        <Row className="row-cols-1 row-cols-md-3 align-items-center">
           <Col>
             <span className="global-span">STUDIO</span>
             <h4>231 Main Street Chicago , IL</h4>

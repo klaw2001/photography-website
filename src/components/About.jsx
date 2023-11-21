@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 // import Container from 'react-bootstrap/esm/Container'
 import { Row, Container, Col } from "react-bootstrap";
 import about1 from "../images/about-1.jpg";
 import about2 from "../images/1111.jpg";
 import about3 from "../images/about-3.jpg";
+import { Element } from "react-scroll";
 const About = () => {
+  const aboutRef = useRef();
   return (
-    <div className="about-wrapper">
+
+    <div className="about-wrapper" id="about" ref={aboutRef}>
       <Container>
         <div className="about-box">
           <Row className="align-items-center justify-content-between row-cols-1 row-cols-md-2">

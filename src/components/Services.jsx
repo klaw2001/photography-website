@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logo from "../images/logo.png";
-import Service1 from "../images/service-1.jpg";
+import Service1 from "../images/service-1.jpeg";
 import Service2 from "../images/service-2.jpg";
 import Service3 from "../images/service-3.jpg";
 import Service4 from "../images/service-4.jpg";
@@ -10,8 +10,8 @@ const Services = () => {
   const list = [
     { id: 1, title: "commercial" },
     { id: 2, title: "personal" },
-    { id: 3, title: "editorial" },
-    { id: 4, title: "design" },
+    { id: 3, title: "couple" },
+    { id: 4, title: "marriage" },
   ];
 
   const [selectedService, setSelectedService] = useState(1); // Set to the default service ID (e.g., 1)
@@ -60,7 +60,7 @@ const Services = () => {
                         </h4>
                       </div>
                       <div>
-                        <span className="fs-2">
+                        <span className="fs-2 " style={{cursor:"pointer"}}>
                           {selectedService === elem.id ? "-" : "+"}
                         </span>
                       </div>
