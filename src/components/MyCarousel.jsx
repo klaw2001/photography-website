@@ -10,6 +10,7 @@ import "../index.css";
 import "swiper/css/navigation";
 // import required modules
 import { Pagination } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 
 export default function MyCarousel() {
   const elem = {
@@ -17,6 +18,7 @@ export default function MyCarousel() {
     heading: "INSPIRATION",
     para: "BEING SEARCH OF MEANING",
     page: "HAPPY ENDING",
+    path: "#services",
   };
 
   const elem2 = {
@@ -24,6 +26,7 @@ export default function MyCarousel() {
     heading: "NATURE",
     para: "BEING SEARCH OF MEANING",
     page: "PHOTOGRAPHY",
+    path: "#services",
   };
 
   const elem3 = {
@@ -31,6 +34,7 @@ export default function MyCarousel() {
     heading: "PHOTOGRAPHY",
     para: "BEING SEARCH OF MEANING",
     page: "HAPPINESS",
+    path: "#services",
   };
   return (
     <div className="position-absolute top-0 start-0 end-0 my-carousel">
@@ -47,8 +51,12 @@ export default function MyCarousel() {
             <h6 className="mb-2 fw-bold car-h6">{elem.title}</h6>
             <h1 className="my-3">{elem.heading}</h1>
             <p className="fw-light hero-p">{elem.para}</p>
-            <button className="hero-btn text-light my-3">READ MORE</button>
-            <span className="position-absolute page-span">/ 01 {elem.page}</span>
+            <a href="#services" className="hero-btn text-light my-3">
+              READ MORE
+            </a>
+            <span className="position-absolute page-span">
+              / 01 {elem.page}
+            </span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -56,8 +64,13 @@ export default function MyCarousel() {
             <h6 className="mb-2 fw-bold car-h6">{elem2.title}</h6>
             <h1 className="my-3">{elem2.heading}</h1>
             <p className="fw-light hero-p">{elem2.para}</p>
-            <button className="hero-btn text-light my-3">READ MORE</button>
-            <span className="position-absolute page-span">/ 02 {elem2.page}</span>
+            <a href="#services" className="hero-btn text-light my-3">
+              READ MORE
+            </a>
+
+            <span className="position-absolute page-span">
+              / 02 {elem2.page}
+            </span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -65,8 +78,13 @@ export default function MyCarousel() {
             <h6 className="mb-2 fw-bold car-h6">{elem3.title}</h6>
             <h1 className="my-3">{elem3.heading}</h1>
             <p className="fw-light hero-p">{elem3.para}</p>
-            <button className="hero-btn text-light my-3">READ MORE</button>
-            <span className="position-absolute page-span">/ 03 {elem3.page}</span>
+            <a href="#services" className="hero-btn text-light my-3">
+              READ MORE
+            </a>
+
+            <span className="position-absolute page-span">
+              / 03 {elem3.page}
+            </span>
           </div>
         </SwiperSlide>
       </Swiper>

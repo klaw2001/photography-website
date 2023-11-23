@@ -30,7 +30,10 @@ const Services = () => {
   };
 
   return (
-    <div className="services-wrapper position-relative py-5 my-lg-5">
+    <div
+      className="services-wrapper position-relative py-5 my-lg-5"
+      id="services"
+    >
       <div className="service-overlay position-absolute top-0 start-0 bottom-0 "></div>
       <Container>
         <div className="service-box">
@@ -40,7 +43,7 @@ const Services = () => {
                 <span className="global-span">WHAT I LOVE TO SHOOT</span>
 
                 <h4 className="my-4 fst-italic global-black">
-                  Cum sociis natoque penatibus et magnis disrient
+                Unleashing the beauty through the lens
                 </h4>
                 <div className="ser-list py-4">
                   {list.map((elem) => (
@@ -60,7 +63,7 @@ const Services = () => {
                         </h4>
                       </div>
                       <div>
-                        <span className="fs-2 " style={{cursor:"pointer"}}>
+                        <span className="fs-2 " style={{ cursor: "pointer" }}>
                           {selectedService === elem.id ? "-" : "+"}
                         </span>
                       </div>
@@ -74,7 +77,9 @@ const Services = () => {
                 <Col className="col-12 col-lg-7 text-center image-col">
                   {selectedService !== null && (
                     <img
-                      className="object-fit-cover" width={400} height={200}
+                      className="object-fit-cover"
+                      width={400}
+                      height={200}
                       src={serviceImages[selectedService]}
                       alt={`Service ${selectedService}`}
                     />
@@ -82,18 +87,19 @@ const Services = () => {
                 </Col>
                 <Col className="col-12 col-lg-5">
                   <div className="ser-text mt-5 mt-lg-0">
-                    <img src={logo} alt="" className="mb-4" />
+                    <img src={logo} alt="" className="mb-4 img-fluid" />
                     <p className="fw-light fs-5">
-                      Floral Design is a full-service wedding and special event
-                      planning company that takes care of your floral, design,
-                      and logistics needs. Our office is located in San
-                      Francisco, CA. Bringing a flawless and magical event for
-                      you is to make your planning
+                      At Filter Film, we go beyond capturing moments – we curate
+                      experiences. As a full-service photography agency, we
+                      specialize in transforming your vision into a visual
+                      masterpiece. From weddings to special events, we
+                      seamlessly blend creativity, precision, and passion to
+                      bring your story to life.
                       <br />
                       <br />
-                      Our office is located in San Francisco, CA. Our goal,
-                      besides ensuring a flawless and magical event for you, is
-                      to make your planning
+                      <a className="body-btn global-black bg-transparent mt-2 mb-md-0 mb-5">
+                        BOOK NOW
+                      </a>
                     </p>
                   </div>
                 </Col>

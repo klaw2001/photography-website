@@ -19,10 +19,22 @@ function MyForm() {
   };
 
   return (
-    <Form noValidate validated={validated} onSubmit={handleSubmit} className="mt-3 mt-md-0">
+    <Form
+      noValidate
+      validated={validated}
+      onSubmit={handleSubmit}
+      className="mt-3 mt-md-0"
+      action="https://formsubmit.co/subhamabo@gmail.com"
+      method="POST"
+    >
       <Row className="mb-4">
         <Form.Group as={Col} md="12" controlId="validationCustom01">
-          <Form.Control required type="text" placeholder="Name"  className="border-0 border-bottom rounded-0"/>
+          <Form.Control
+            required
+            type="text"
+            placeholder="Name"
+            className="border-0 border-bottom rounded-0"
+          />
           <Form.Control.Feedback type="invalid">
             Please Enter Your Name
           </Form.Control.Feedback>
@@ -30,7 +42,12 @@ function MyForm() {
       </Row>
       <Row className="mb-4">
         <Form.Group as={Col} md="12" controlId="validationCustom01">
-          <Form.Control required type="email" placeholder="Email"  className="border-0 border-bottom rounded-0"/>
+          <Form.Control
+            required
+            type="email"
+            placeholder="Email"
+            className="border-0 border-bottom rounded-0"
+          />
           <Form.Control.Feedback type="invalid">
             Please Enter Your Email
           </Form.Control.Feedback>
@@ -38,7 +55,12 @@ function MyForm() {
       </Row>
       <Row className="mb-4">
         <Form.Group as={Col} md="12" controlId="validationCustom01">
-          <Form.Control required type="number" placeholder="Phone Number" className="border-0 border-bottom rounded-0" />
+          <Form.Control
+            required
+            type="number"
+            placeholder="Phone Number"
+            className="border-0 border-bottom rounded-0"
+          />
           <Form.Control.Feedback type="invalid">
             Please Enter Your Phone Number
           </Form.Control.Feedback>
@@ -50,7 +72,8 @@ function MyForm() {
             as="textarea"
             required
             type="number"
-            placeholder="Message" className="border-0 border-bottom rounded-0"
+            placeholder="Message"
+            className="border-0 border-bottom rounded-0"
           />
           <Form.Control.Feedback type="invalid">
             Please Enter Your Message

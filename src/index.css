@@ -73,7 +73,7 @@ p.hero-p {
   color: #4c4c4c !important;
 }
 
-button.body-btn {
+.body-btn {
   padding: 17px 34px 14px;
   border: 1px solid #4c4c4c;
   background-color: transparent;
@@ -81,9 +81,10 @@ button.body-btn {
   font-weight: 700;
   letter-spacing: 4.2px;
   transition: .3s;
+  text-decoration: none;
 }
 
-button.body-btn:hover {
+.body-btn:hover {
   background-color: #4c4c4c !important;
   color: #fff !important;
 }
@@ -104,7 +105,7 @@ h3.global-heading {
   line-height: 1.3;
 }
 
-button.hero-btn {
+.hero-btn {
   padding: 17px 34px 14px;
   border: 1px solid #fff;
   background-color: transparent;
@@ -112,9 +113,10 @@ button.hero-btn {
   font-weight: 700;
   letter-spacing: 4.2px;
   transition: .3s;
+  text-decoration: none;
 }
 
-button.hero-btn:hover {
+.hero-btn:hover {
   background-color: #fff;
   color: #4c4c4c !important;
 }
@@ -253,7 +255,26 @@ span.page-span {
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   }
-
+.portfolio-img-2{
+  background-image: url(images/FIL07872.jpg) !important;
+  background-size: cover !important;
+  background-position: bottom !important;
+}
+.portfolio-img-3{
+  background-image: url(images/DSC_9465.jpg) !important;
+  background-size: cover !important;
+  background-position: 0px -242px !important;
+}
+.portfolio-img-4{
+  background-image: url(images/DSC_2245.jpg) !important;
+  background-size: cover !important;
+  background-position: 0px -96px !important;
+}
+.portfolio-img-5{
+  background-image: url(images/DSC_9533-2.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
 
 
 
@@ -295,6 +316,25 @@ span.page-span {
   .parent{
     grid-template-columns: repeat(2, 150px);
   }
+  .portfolio-img-4{
+    background-position: 0px -10px !important;
+  }
+  .portfolio-img-3{
+    background-position: 0px 0px !important;
+  }
+  .navbar-toggler-icon{
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS4yNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hbGlnbi1yaWdodCI+PGxpbmUgeDE9IjIxIiB4Mj0iMyIgeTE9IjYiIHkyPSI2Ii8+PGxpbmUgeDE9IjIxIiB4Mj0iOSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMjEiIHgyPSI3IiB5MT0iMTgiIHkyPSIxOCIvPjwvc3ZnPg==') !important;
+  }
+  .navbar-toggler{
+    border: none !important;
+  }
+  .navbar-toggler:focus{
+    border: none;
+    box-shadow: none !important;
+  }
+  .ms-auto.text-capitalize.text-light.nav-elements.navbar-nav {
+  background: rgb(255 255 255 / 0%);
+    backdrop-filter: saturate(180%) blur(10px);}
 }
 
 @media screen and (max-width:426px) {
@@ -360,4 +400,11 @@ span.page-span {
     grid-template-columns: repeat(2, 196px);
 
   }
+  .portfolio-img-4{
+    background-position: center !important;
+  }
+  .portfolio-img-3{
+    background-position: right !important;
+  }
+  
 }

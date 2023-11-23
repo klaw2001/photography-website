@@ -8,12 +8,7 @@ import { Link } from "react-scroll";
 function MyNavbar({aboutRef}) {
   // const about = useRef(null)
 
-  const scrollToSection = (elementRef) =>{
-    window.scrollTo({
-      top:elementRef.current.offsetTop,
-      behavior:"smooth"
-    })
-  }
+ 
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -48,19 +43,10 @@ function MyNavbar({aboutRef}) {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto text-capitalize text-light nav-elements">
-            {/* <Nav.Link href="#">Home</Nav.Link> */}
-            {/* <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              About
-            </Link> */}
-            <Nav.Link href="#">Home</Nav.Link>
-            <Nav.Link href="about" onClick={()=>scrollToSection(aboutRef)}>about</Nav.Link>
+          <Nav className="ms-auto text-capitalize text-light nav-elements ps-3 ps-lg-0">
+           
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="#about">about</Nav.Link>
             <Nav.Link href="#services">services</Nav.Link>
             <Nav.Link href="#portfolio">portfolio</Nav.Link>
             <Nav.Link href="#testimonials">testimonials</Nav.Link>

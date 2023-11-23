@@ -8,7 +8,6 @@ import { Element } from "react-scroll";
 const About = () => {
   const aboutRef = useRef();
   return (
-
     <div className="about-wrapper" id="about" ref={aboutRef}>
       <Container>
         <div className="about-box">
@@ -17,20 +16,34 @@ const About = () => {
               <div className="about-text">
                 <span className="global-span">GET TO KNOW ME</span>
                 <h3 className="global-heading mt-3 global-black">
-                  GET TO KNOW ME <br /> BETTER
+                  CAPTURING MOMENTS, CREATING MEMORIES
                 </h3>
                 <h4 className="my-4 global-black fst-italic">
-                  Cum sociis natoque penatibus et magnis disrient
+                  Unleashing the beauty through the lens
                 </h4>
                 <p>
-                  I’m a trend setter, an adventurer, a photographer! I love
-                  experiments and personal projects. Finding new perspectives
-                  and breathing in new life into old boring scenes is what
-                  inspires and gets me excited!
+                  Welcome to Filter Film, where moments transform into timeless
+                  memories. I'm not just a photographer; I'm a trendsetter, an
+                  adventurer, and a storyteller with a camera. My passion lies
+                  in pushing boundaries, experimenting with creativity, and
+                  breathing new life into every scene I capture.
                 </p>
-                <button className="body-btn global-black bg-transparent mt-2 mb-md-0 mb-5">
+                <p>
+                  From candid shots to meticulously planned projects, I thrive
+                  on finding new perspectives and bringing fresh energy to even
+                  the most familiar settings. Every click is an opportunity to
+                  freeze a moment, evoke emotion, and create a visual narrative
+                  that lasts a lifetime.
+                </p>
+                <p className="pb-3">
+                  Join me on this visual journey, where we turn ordinary moments
+                  into extraordinary memories. Let's collaborate and capture the
+                  essence of your story. Contact us to discuss your vision, and
+                  let's embark on a photographic adventure together.
+                </p>
+                <a href="#services" className="body-btn global-black bg-transparent  mb-md-0 mb-5">
                   CONTACT US
-                </button>
+                </a>
               </div>
             </Col>
             <Col>
