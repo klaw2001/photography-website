@@ -13,7 +13,7 @@ const About = () => {
         <div className="about-box">
           <Row className="align-items-center justify-content-between row-cols-1 row-cols-md-2">
             <Col>
-              <div className="about-text">
+              <div className="about-text py-4 py-lg-0">
                 <span className="global-span">GET TO KNOW ME</span>
                 <h3 className="global-heading mt-3 global-black">
                   CAPTURING MOMENTS, CREATING MEMORIES

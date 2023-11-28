@@ -162,13 +162,13 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical {
   right: 50px;
-  bottom: 10px;
+  bottom: 38px;
   top: auto;
 }
 
 span.page-span {
-  bottom: 20px;
-  left: 50px;
+  bottom: 90px;
+  /* left: 0px; */
   font-size: 15px;
   letter-spacing: 2.4px;
 }
@@ -323,6 +323,7 @@ span.page-span {
     background-position: 0px 0px !important;
   }
   .navbar-toggler-icon{
+    background-repeat: no-repeat !important;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMS4yNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1hbGlnbi1yaWdodCI+PGxpbmUgeDE9IjIxIiB4Mj0iMyIgeTE9IjYiIHkyPSI2Ii8+PGxpbmUgeDE9IjIxIiB4Mj0iOSIgeTE9IjEyIiB5Mj0iMTIiLz48bGluZSB4MT0iMjEiIHgyPSI3IiB5MT0iMTgiIHkyPSIxOCIvPjwvc3ZnPg==') !important;
   }
   .navbar-toggler{

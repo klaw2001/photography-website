@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "../index.css";
 import "swiper/css/navigation";
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination , Autoplay } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
 
 export default function MyCarousel() {
@@ -39,11 +39,13 @@ export default function MyCarousel() {
   return (
     <div className="position-absolute top-0 start-0 end-0 my-carousel">
       <Swiper
-        direction={"vertical"}
+        direction={"horizontal"}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        loop={true}
+        modules={[Pagination , Autoplay]}
+        autoplay={{ delay: 3000 }} 
         className="mySwiper"
       >
         <SwiperSlide>
