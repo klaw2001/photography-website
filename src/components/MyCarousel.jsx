@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 export default function MyCarousel() {
   const elem = {
     title: "WELCOME TO THE FILTERFILM WORLD",
-    heading: "INSPIRATION",
+    heading: "LOVE",
     para: "BEING SEARCH OF MEANING",
     page: "HAPPY ENDING",
     path: "#services",
@@ -49,7 +49,7 @@ export default function MyCarousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="swiper-box1 d-flex justify-content-center align-items-center py-4 flex-column text-light position-relative">
+          <div className="my-swiper-car swiper-box1 d-flex justify-content-center align-items-center py-4 flex-column text-light position-relative">
             <h6 className="mb-2 fw-bold car-h6">{elem.title}</h6>
             <h1 className="my-3">{elem.heading}</h1>
             <p className="fw-light hero-p">{elem.para}</p>
@@ -62,7 +62,7 @@ export default function MyCarousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="swiper-box2 d-flex justify-content-center align-items-center py-4 flex-column text-light position-relative">
+          <div className="my-swiper-car swiper-box2 d-flex justify-content-center align-items-center py-4 flex-column text-light position-relative">
             <h6 className="mb-2 fw-bold car-h6">{elem2.title}</h6>
             <h1 className="my-3">{elem2.heading}</h1>
             <p className="fw-light hero-p">{elem2.para}</p>
@@ -76,7 +76,7 @@ export default function MyCarousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="swiper-box3 d-flex justify-content-center align-items-center py-4 flex-column text-light position-relative">
+          <div className="my-swiper-car swiper-box3 d-flex justify-content-center align-items-center py-4 flex-column text-light position-relative">
             <h6 className="mb-2 fw-bold car-h6">{elem3.title}</h6>
             <h1 className="my-3">{elem3.heading}</h1>
             <p className="fw-light hero-p">{elem3.para}</p>
